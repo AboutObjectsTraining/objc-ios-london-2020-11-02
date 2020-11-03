@@ -7,16 +7,6 @@
 
 @implementation PersonTests
 
-- (void)setUp
-{
-    [super setUp];
-}
-
-- (void)tearDown
-{
-    [super tearDown];
-}
-
 - (void)testPart01
 {
     Person *fred = [[Person alloc] init];
@@ -38,9 +28,7 @@
                                             lastName:@"Smith"
                                                  age:32];
     NSLog(@"%@", [fred fullName]);
-    
     NSLog(@"%@", [fred description]);
-    
     NSLog(@"%@", fred);
 }
 

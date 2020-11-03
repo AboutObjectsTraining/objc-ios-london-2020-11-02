@@ -2,6 +2,26 @@
 
 @implementation Person
 
+- (instancetype)initWithFirstName:(NSString *)firstName
+                         lastName:(NSString *)lastName
+                              age:(int)age {
+    if (!(self = [super init])) return nil;
+    
+    _firstName = [firstName copy];
+    _lastName = [lastName copy];
+    _age = age;
+    
+    return self;
+}
+
++ (instancetype)personWithFirstName:(NSString *)firstName
+                           lastName:(NSString *)lastName
+                                age:(int)age {
+    return [[self alloc] initWithFirstName:firstName
+                                  lastName:lastName
+                                       age:age];
+}
+
 - (NSString *)firstName {
     return _firstName;
 }
@@ -24,35 +44,14 @@
 }
 
 //// Part 2
-- (id)initWithFirstName:(NSString *)firstName
-               lastName:(NSString *)lastName
-                    age:(int)age
-{
-    if (!(self = [super init])) return nil;
-    
-    _firstName = [firstName copy];
-    _lastName = [lastName copy];
-    _age = age;
-    
-    return self;
-}
 
 - (NSString *)fullName
 {
     return [NSString stringWithFormat:@"%@ %@", [self firstName], [self lastName]];
 }
-////
 
 
 //// Part 3
-+ (instancetype)personWithFirstName:(NSString *)firstName
-                           lastName:(NSString *)lastName
-                                age:(int)age
-{
-    return [[self alloc] initWithFirstName:firstName
-                                  lastName:lastName
-                                       age:age];
-}
 
 - (void)display
 {

@@ -44,6 +44,8 @@
     [fred setDog:rover];
     
     [(id)fred bark];
+    
+//    Person *foo = [Person personWithFirstName:@"" lastName:@"" age:0];
 }
 
 @end

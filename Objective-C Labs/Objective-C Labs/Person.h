@@ -7,6 +7,14 @@
     int _age;
 }
 
+- (instancetype)initWithFirstName:(NSString *)firstName
+                         lastName:(NSString *)lastName
+                              age:(int)age;
+
++ (instancetype)personWithFirstName:(NSString *)firstName
+                           lastName:(NSString *)lastName
+                                age:(int)age;
+
 - (NSString *)firstName;
 - (void)setFirstName:(NSString *)newValue;
 
@@ -17,18 +25,10 @@
 - (void)setAge:(int)newValue;
 
 //// Part 2
-- (id)initWithFirstName:(NSString *)firstName
-               lastName:(NSString *)lastName
-                    age:(int)age;
-
 - (NSString *)fullName;
-
 ////
 
 //// Part 3
-+ (instancetype)personWithFirstName:(NSString *)firstName
-                           lastName:(NSString *)lastName
-                                age:(int)age;
 - (void)display;
 ////
 
