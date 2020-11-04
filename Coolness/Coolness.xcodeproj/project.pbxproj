@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B48124022552EE5600714835 /* CLNCoolViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B48124012552EE5600714835 /* CLNCoolViewCell.m */; };
 		B4AA840E2552C02D007B383E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AA840D2552C02D007B383E /* AppDelegate.m */; };
 		B4AA84192552C02F007B383E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4AA84182552C02F007B383E /* Assets.xcassets */; };
 		B4AA841C2552C02F007B383E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AA841A2552C02F007B383E /* LaunchScreen.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B48124002552EE5600714835 /* CLNCoolViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNCoolViewCell.h; sourceTree = "<group>"; };
+		B48124012552EE5600714835 /* CLNCoolViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNCoolViewCell.m; sourceTree = "<group>"; };
 		B4AA84092552C02D007B383E /* Coolness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coolness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4AA840C2552C02D007B383E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4AA840D2552C02D007B383E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				B4AA840D2552C02D007B383E /* AppDelegate.m */,
 				B4AA842F2552D53E007B383E /* CLNCoolController.h */,
 				B4AA84302552D53E007B383E /* CLNCoolController.m */,
+				B48124002552EE5600714835 /* CLNCoolViewCell.h */,
+				B48124012552EE5600714835 /* CLNCoolViewCell.m */,
 				B4AA84182552C02F007B383E /* Assets.xcassets */,
 				B4AA84282552CAED007B383E /* Main.storyboard */,
 				B4AA841A2552C02F007B383E /* LaunchScreen.storyboard */,
@@ -141,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4AA84312552D53E007B383E /* CLNCoolController.m in Sources */,
+				B48124022552EE5600714835 /* CLNCoolViewCell.m in Sources */,
 				B4AA840E2552C02D007B383E /* AppDelegate.m in Sources */,
 				B4AA841F2552C02F007B383E /* main.m in Sources */,
 			);
