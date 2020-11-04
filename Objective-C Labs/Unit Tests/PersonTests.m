@@ -1,11 +1,19 @@
 #import "AOITestCase.h"
 #import "Person.h"
+#import "Dog.h"
 
 @interface PersonTests : AOITestCase
 @end
 
 
 @implementation PersonTests
+
+- (void)testCopyingADog {
+    NSLog(@"%s", __func__);
+    Dog *dog = [[Dog alloc] initWithName:@"Rover"];
+    Dog *copyOfDog = [dog copy];
+    NSLog(@"New dog is %@", copyOfDog);
+}
 
 - (void)testPart01
 {

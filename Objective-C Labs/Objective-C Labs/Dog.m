@@ -2,6 +2,14 @@
 
 @implementation Dog
 
+- (id)copyWithZone:(NSZone *)zone {
+    Dog *newDog = [[[self class] allocWithZone:zone] init];
+    newDog->_name = self.name;
+    newDog->_delegate = self.delegate;
+    return newDog;
+}
+
+
 // PART 1
 
 - (id)initWithName:(NSString *)name
@@ -82,5 +90,6 @@
 }
 
 ////////
+
 
 @end

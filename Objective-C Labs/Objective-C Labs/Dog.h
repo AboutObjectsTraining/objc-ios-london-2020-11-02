@@ -13,7 +13,7 @@
 ////////
 
 
-@interface Dog : NSObject
+@interface Dog : NSObject <NSCopying>
 {
     NSString *_name;
     
