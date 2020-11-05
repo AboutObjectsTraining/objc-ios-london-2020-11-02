@@ -16,4 +16,19 @@
 }
 
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"In %s", __func__);
+}
+
+//- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    UITouch *touch = touches.anyObject;
+//    CGPoint currLocation = [touch locationInView:nil];
+//    CGPoint prevLocation = [touch previousLocationInView:nil];
+//
+//    CGFloat dx = currLocation.x - prevLocation.x;
+//    CGFloat dy = currLocation.y - prevLocation.y;
+//
+//    touches.anyObject.view.frame = CGRectOffset(touches.anyObject.view.frame, dx, dy);
+//}
+
 @end
