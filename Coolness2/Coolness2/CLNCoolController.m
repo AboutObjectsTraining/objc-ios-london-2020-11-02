@@ -30,7 +30,16 @@
 //    [super touchesBegan:touches withEvent:event];
 //}
 
-- (void)loadView {
+- (void)loadView1 {
+    [NSBundle.mainBundle loadNibNamed:@"CoolStuff" owner:self options:nil];
+}
+
+- (void)loadView2 {
+    NSArray *topLevelObjs = [NSBundle.mainBundle loadNibNamed:@"CoolStuff" owner:nil options:nil];
+    self.view = topLevelObjs.firstObject;
+}
+
+- (void)old_loadView {
     self.view = [[UIView alloc] init];
     self.view.backgroundColor = UIColor.brownColor;
     

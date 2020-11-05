@@ -10,9 +10,10 @@
 		B48124352554655D00714835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48124342554655D00714835 /* Assets.xcassets */; };
 		B48124382554655D00714835 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48124362554655D00714835 /* LaunchScreen.storyboard */; };
 		B481243B2554655D00714835 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B481243A2554655D00714835 /* main.m */; };
-		B4812454255467F900714835 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B481244E255467F900714835 /* AppDelegate.m */; };
+		B4812454255467F900714835 /* CLNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B481244E255467F900714835 /* CLNAppDelegate.m */; };
 		B4812455255467F900714835 /* CLNCoolViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4812451255467F900714835 /* CLNCoolViewCell.m */; };
 		B4812456255467F900714835 /* CLNCoolController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4812452255467F900714835 /* CLNCoolController.m */; };
+		B481245B25546B1E00714835 /* CoolStuff.xib in Resources */ = {isa = PBXBuildFile; fileRef = B481245A25546B1E00714835 /* CoolStuff.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,12 +22,13 @@
 		B48124372554655D00714835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B48124392554655D00714835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B481243A2554655D00714835 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B481244E255467F900714835 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B481244F255467F900714835 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B481244E255467F900714835 /* CLNAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNAppDelegate.m; sourceTree = "<group>"; };
+		B481244F255467F900714835 /* CLNAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNAppDelegate.h; sourceTree = "<group>"; };
 		B4812450255467F900714835 /* CLNCoolViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNCoolViewCell.h; sourceTree = "<group>"; };
 		B4812451255467F900714835 /* CLNCoolViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNCoolViewCell.m; sourceTree = "<group>"; };
 		B4812452255467F900714835 /* CLNCoolController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNCoolController.m; sourceTree = "<group>"; };
 		B4812453255467F900714835 /* CLNCoolController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNCoolController.h; sourceTree = "<group>"; };
+		B481245A25546B1E00714835 /* CoolStuff.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoolStuff.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,11 @@
 		B48124272554655B00714835 /* Coolness2 */ = {
 			isa = PBXGroup;
 			children = (
-				B481244F255467F900714835 /* AppDelegate.h */,
-				B481244E255467F900714835 /* AppDelegate.m */,
+				B481244F255467F900714835 /* CLNAppDelegate.h */,
+				B481244E255467F900714835 /* CLNAppDelegate.m */,
 				B4812453255467F900714835 /* CLNCoolController.h */,
 				B4812452255467F900714835 /* CLNCoolController.m */,
+				B481245A25546B1E00714835 /* CoolStuff.xib */,
 				B4812450255467F900714835 /* CLNCoolViewCell.h */,
 				B4812451255467F900714835 /* CLNCoolViewCell.m */,
 				B48124342554655D00714835 /* Assets.xcassets */,
@@ -130,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B48124382554655D00714835 /* LaunchScreen.storyboard in Resources */,
+				B481245B25546B1E00714835 /* CoolStuff.xib in Resources */,
 				B48124352554655D00714835 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4812456255467F900714835 /* CLNCoolController.m in Sources */,
-				B4812454255467F900714835 /* AppDelegate.m in Sources */,
+				B4812454255467F900714835 /* CLNAppDelegate.m in Sources */,
 				B4812455255467F900714835 /* CLNCoolViewCell.m in Sources */,
 				B481243B2554655D00714835 /* main.m in Sources */,
 			);
