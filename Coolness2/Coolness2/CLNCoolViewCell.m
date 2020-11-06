@@ -7,7 +7,8 @@ const UIEdgeInsets CLNTextInsets = {
    .top = 7, .bottom = 8, .left = 12, .right = 12
 };
 
-@interface CLNCoolViewCell ()
+
+IB_DESIGNABLE @interface CLNCoolViewCell ()
 @property (getter=isHighlighted, nonatomic) BOOL highlighted;
 @property (class, readonly, nonatomic) NSDictionary *textAttributes;
 @end
@@ -25,7 +26,16 @@ const UIEdgeInsets CLNTextInsets = {
     return self;
 }
 
-// TODO: Override initWithCoder:
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self == nil) return nil;
+    
+    [self configureLayer];
+    [self configureGestureRecognizer];
+    
+    return self;
+}
 
 - (void)configureGestureRecognizer {
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(bounce)];

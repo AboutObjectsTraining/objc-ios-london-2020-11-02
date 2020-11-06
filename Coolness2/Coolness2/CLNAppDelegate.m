@@ -18,6 +18,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"In %s", __func__);
+    [UIApplication.sharedApplication sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
 }
 
 //- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
