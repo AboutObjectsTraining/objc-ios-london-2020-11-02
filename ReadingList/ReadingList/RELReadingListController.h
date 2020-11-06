@@ -5,7 +5,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ReadingListController : UITableViewController
+@interface RELReadingListController : UITableViewController
 
 @end
 

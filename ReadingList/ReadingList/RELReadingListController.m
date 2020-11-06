@@ -29,7 +29,8 @@
 // MARK: Unwind segues
 
 - (IBAction)done:(UIStoryboardSegue *)unwindSegue {
-    // TODO: refresh the UI and save the model
+    [self.tableView reloadData];
+    [self.storeController saveReadingList:self.readingList];
 }
 
 - (IBAction)cancel:(UIStoryboardSegue *)unwindSegue {
