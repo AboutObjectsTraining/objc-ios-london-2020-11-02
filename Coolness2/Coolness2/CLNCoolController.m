@@ -5,13 +5,13 @@
 #import "CLNCoolViewCell.h"
 
 @interface CLNCoolController () <UITextFieldDelegate>
-@property (strong, nonatomic) UITextField *textField;
-@property (strong, nonatomic) UIView *contentView;
+@property (strong, nonatomic) IBOutlet UITextField *textField;
+@property (strong, nonatomic) IBOutlet UIView *contentView;
 @end
 
 @implementation CLNCoolController
 
-- (void)addCell {
+- (IBAction)addCell {
     NSLog(@"In %s, text is %@", __func__, self.textField.text);
     CLNCoolViewCell *cell = [[CLNCoolViewCell alloc] init];
     cell.text = self.textField.text;
