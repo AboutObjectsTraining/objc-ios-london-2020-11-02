@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "RLMModelObject.h"
+#import <ReadingListModel/ReadingListModel.h>
 
 extern const struct RLMBookKeys {
     NSString * __unsafe_unretained title;

@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "RLMModelObject.h"
+#import <ReadingListModel/ReadingListModel.h>
 
 extern const struct RLMAuthorKeys {
     NSString * __unsafe_unretained firstName;

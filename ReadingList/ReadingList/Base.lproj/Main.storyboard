@@ -69,8 +69,12 @@
                     <navigationItem key="navigationItem" title="Reading List" id="CRl-zI-nKi">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gvm-yT-2jw"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="storeController" destination="BnR-tU-lh4" id="acX-aK-98T"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kFl-bV-XeN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="BnR-tU-lh4" customClass="RLMStoreController"/>
             </objects>
             <point key="canvasLocation" x="-1468" y="-56"/>
         </scene>
